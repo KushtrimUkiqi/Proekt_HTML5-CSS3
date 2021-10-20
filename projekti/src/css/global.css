@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+
+*
+{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+a 
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*---------------------------NAV BAR SECTION----------------------------------------*/
+
+.main , #logo
+{
+    background-repeat: no-repeat ;
+}
+
+.navBar
+{
+    width: 90%;
+    /* height: 12vh; */
+    margin: 2vh auto 0 auto;
+}
+
+nav 
+{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+#logo
+{
+    width: 8vw;
+    height: 8vh;
+    background-image: url(../img/upshotLogo.png);
+    background-size: contain;
+    
+}
+
+
+#links ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#links li 
+{
+    padding: 0 3vw;
+}
+
+#links a 
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+

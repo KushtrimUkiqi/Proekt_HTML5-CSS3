@@ -1,0 +1,669 @@
+@import url(./global.css);
+@import url(./indexAdapt.css);
+
+
+/******************************************GENERALISATION OF CSS***********************************************/
+
+button:hover
+{
+background-color: white;
+color: #220b38;
+transition: 0.3s ease-in;
+}
+
+a:hover
+{
+    opacity: 0.8;
+}
+
+/*  .connectWithUsButton is class of the "MAIN SECTION"  ,  .aboutUsButton is class of the "ABOUT US SECTION" */
+.connectWithUsButton , .aboutUsButton , .descriptionButton
+{
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 2vh 3vw;
+    font-size: 16px;
+}
+
+
+/*  .ourApps is class of the "OUR APPS SECTION" , .ourGraphicDesign is class of the "OUR GRAPHIC DESIGN" */
+
+.ourApps  , .ourGraphicDesigns 
+{
+    height: 90vh;
+    background: linear-gradient(90deg, black 30%, #220b38 30%);
+
+}
+
+
+/* .ourSites is class of the "OUR SITES SECTION" , .ourVideos is class of the "OUR VIDEOS SECTION"*/
+
+.ourSites , .ourVideos 
+{
+    background-color: black;
+    height: 80vh;
+}
+
+/* .icon  , .description are classes of "OUR APPS SECTION" and "OUR GRAPHIC DESIGNs SECTION" */
+
+.ourApps , .ourGraphicDesigns
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr ;
+}
+
+.icon 
+{
+    height: 90vh;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 2  ;
+    background-position: center;
+}
+
+.description
+{
+    grid-column: 3 ;
+    align-self: center;
+    text-align: center;   
+}
+
+
+
+
+/* .descriptionS , .iconS are classes of "OUR SITES DESIGNS SECTION" and "OUR VIDEOS SECTION"*/
+
+.ourSites , .ourVideos
+{
+    display: grid;
+    grid-template-columns: 2fr 6fr 10fr 2fr;
+}
+
+.descriptionS
+{
+    grid-column: 2;
+    align-self: center;
+    text-align: center;
+}
+
+.iconS
+{
+    grid-column: 3;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 4vh 4vw;
+
+}
+
+/*.descriptionTitle , .descriptionText ,.descriptionButton are classes of "OUR APPS SECTION" ,"OUR GRAPHIC DESIGNs SECTION","OUR SITES DESIGNS SECTION" and "OUR VIDEOS SECTION" */
+
+
+.descriptionTitle 
+{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+
+    
+}
+
+.descriptionText
+{
+    padding: 3vh 1vh 3vh 1vh;
+    line-height: 150%;
+    font-size: 20px;
+    color: white;    
+}
+
+.descriptionButton
+{
+    font-size: 20px;
+    color: white;
+   
+}
+
+
+
+/* ----------------------------------------MAIN SECTION----------------------------------------------------- */
+
+
+.main 
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/lens.jpg);
+    background-size: cover;
+}
+
+
+.slogan 
+{
+    padding: 1vh 0;
+    width: 70vw;
+    height: 40vh;
+    margin: 20vh auto;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.541);
+    box-shadow: 0px 0px 30px 60vh rgba(0, 0, 0, 0.541);
+}
+
+.slogan h1 
+{
+    font-size: 50px;
+
+}
+
+.connectWithUsDiv
+{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.connectWithUsButton
+{
+    
+    color: white;
+}
+
+
+
+/* ----------------------------------------COVID-19 ALERT SECTION----------------------------------------------------- */
+
+.covid19Alert
+{
+    background-color: #351e4b;
+    padding: 3vh 0;
+    width: 100vw;
+    align-items: center;
+}
+
+.covid19Alert p {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+
+}
+
+
+/* ----------------------------------------ABOUT US SECTION----------------------------------------------------- */
+
+
+.aboutUs
+{
+    background-color: black;
+    color: white;
+    padding: 10vh 0 ;
+}
+
+.aboutUs p
+{
+    text-align: center;
+    font-size: 20px;
+    padding: 1vh 20vw;
+    line-height: 120%;
+}
+
+.aboutUsDiv
+{
+    width: 40%;
+    padding: 4vh 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUsButton
+{
+    color: white;
+}
+
+/* ----------------------------------------OUR APPS SECTION----------------------------------------------------- */
+
+
+.ourApps .icon
+{
+    background-image: url(../img/phone.png);
+}
+
+/* ----------------------------------------OUR SITES DESIGNS SECTION----------------------------------------------------- */
+
+
+
+ .ourSites .iconS
+{
+    background-image: url(../img/webSite.png);
+}
+
+
+/* ----------------------------------------OUR GRAPHIC DESIGNS SECTION----------------------------------------------------- */
+
+
+
+.ourGraphicDesigns .icon 
+{
+    background-image: url(../img/cover.png);
+}
+
+/* ----------------------------------------OUR VIDEOS SECTION----------------------------------------------------- */
+
+
+.ourVideos .iconS
+{
+    background-image: url(../img/video.jpg);
+}
+
+/* ----------------------------------------OUR CLIENTS SECTION----------------------------------------------------- */
+
+
+.ourClients
+{
+    height: 60vh;
+    background-color: #220b38;
+    align-self: center;
+    text-align: center; 
+    
+}
+
+.ourClients p
+{
+    padding: 8vh 0;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.clientsIcons
+{
+    padding: 8vh 0;
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    margin: auto;
+}
+.clientsIcons > div
+{
+    width: 12vw;
+    height: 12vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.clientsIcons div:nth-child(1)
+{
+ background-image: url(../img/xbox-675x421.png);   
+}
+
+.clientsIcons div:nth-child(2)
+{
+ background-image: url(../img/consol-675x421.png);   
+}
+
+.clientsIcons div:nth-child(3)
+{
+ background-image: url(../img/crf-675x421.png);   
+}
+
+.clientsIcons div:nth-child(4)
+{
+ background-image: url(../img/dhfl-675x421.png);   
+}
+
+.clientsIcons div:nth-child(5)
+{
+ background-image: url(../img/e26-675x421.png);  
+}
+.clientsIcons div:nth-child(6)
+{
+ background-image: url(../img/kg-675x421.png);   
+}
+
+/* ----------------------------------------CONTACT FORM SECTION----------------------------------------------------- */
+
+.formForContact
+{
+    background-color: black;
+}
+
+.formForContact p
+{
+    padding: 8vh 0;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+form
+{
+    width: 50%;
+    margin: auto;
+}
+
+.inputFields
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formForContact label
+{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+input , textarea
+{
+    font-size: 20px;
+    border-radius: 3px;
+    border : 1px solid transparent;
+   
+}
+
+input
+{
+    height: 6vh;
+    width: 15vw;
+}
+
+textarea
+{
+    width:50vw;
+    height: 30vh;
+}
+
+input:focus , textarea:focus 
+{
+    outline: none;
+}
+
+form button
+{
+    margin: 3vh auto;
+}
+
+#checkBox 
+{
+    width: 2vh;
+    height: 2vh;
+    
+}
+
+
+#terms
+{
+    color:#703da0e8;
+    font-size: 20px;
+   
+}
+
+.alignCenterHorizontally
+{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+/* ----------------------------------------FOOTER SECTION----------------------------------------------------- */
+
+.footer
+{
+    background-color: black;
+
+}
+
+.footer p:nth-child(1)
+{
+    padding: 8vh 0;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.socialMedia
+{
+    width: 14vw;
+    height: 4vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedia > div 
+{
+    width: 5vw;
+    height: 4vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.socialMedia div:nth-child(1)
+{
+    background-image: url(../img/facebook.png);
+    
+}
+
+
+.socialMedia div:nth-child(2)
+{
+    background-image: url(../img/instagram.png);
+
+}
+
+.footer p:nth-of-type(2)
+{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 5vh 0;
+}
+
+.footer p a
+{
+    font-size: 16px;
+    color: #703da0e8;
+}
+
+
+/*////////////////////////////////RESPONISVE DISPLAY///////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 1050px)
+{
+    .slogan {
+        padding: 2vh 0;
+        width: 80vw;
+        height: 70vh;
+        margin: 10vh auto;
+        border: 0px solid transparent;
+        box-shadow: none;
+        background-color: transparent;
+        
+    }
+
+    .slogan h1
+    {
+        font-size: 35px;
+        width: 80vw;
+        
+    }
+
+    .slogan h2
+    {
+        font-size: 25px
+    }
+
+    .slogan .connectWithUsDiv{
+        width: 70vw;
+    }
+
+
+    .slogan .connectWithUsButton{
+        width: 70vw;
+    }
+} 
+
+@media only screen and (max-width: 800px) 
+{
+
+    #logo
+    {
+        height: 20px;
+        width: 20px;
+    }
+
+    nav
+    {
+        align-items: center
+    }
+
+    #links a
+    {
+        font-size: 15px;
+    }
+
+ 
+
+
+    .covid19Alert p 
+    {
+        width: 80%;
+        margin: auto;
+        font-size: 20px;
+        text-align: center;
+    
+    }
+
+    .aboutUs p
+    {
+    text-align: center;
+    margin: auto;
+    font-size: 17px;
+    line-height: 100%;
+    }
+
+
+
+    .ourApps , .ourGraphicDesigns
+{
+
+    height: 100vh;
+    background: #220b38;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 0;
+}
+
+
+    .icon
+    {
+        height: 40vh;
+    }
+
+
+    .descriptionTitle
+    {
+        font-size: 25px;
+    }
+
+    .descriptionText
+    {
+        padding: 3vh 3vw;
+        font-size: 15px;
+    }
+
+
+    .ourSites , .ourVideos 
+{
+    height: 100vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 5vh 0;
+
+}
+.iconS 
+{
+    height: 25vh;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.descriptionS
+{
+    grid-column: 1;
+    grid-row: 2;  
+}
+
+.descriptionButton
+{
+    font-size: 15px;
+}
+
+.ourClients p , .footer p:nth-child(1) , .formForContact p
+{
+    font-size: 25px;
+}
+
+.ourClients p
+{
+    padding: 8vh 0 4vh 0;
+}
+
+.clientsIcons
+{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 0 2vh 0;
+}
+
+.clientsIcons > div
+{
+    row-gap: 2px;
+    column-gap: 2px;
+    width: 20vw;
+    height: 20vh;
+}
+
+.inputFields
+{
+    flex-direction: column;
+}
+
+.inputFields input
+{
+    width: 50vw;
+}
+
+.connectWithUsDiv
+{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.connectWithUsButton
+{
+    padding: 2vh auto;
+}
+
+
+.alignCenterHorizontally label 
+{
+    font-size: 15px;
+}
+
+.socialMedia {
+    justify-content: space-around;
+}
+}

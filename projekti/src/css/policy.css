@@ -1,0 +1,57 @@
+@import url(./global.css);
+
+.nav
+{
+    background-color: black;
+    height: 40vh;
+    width: 100vw;
+}
+
+
+.headline
+{
+    padding: 8vh 0;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.rules 
+{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+}
+
+p{
+    padding: 2vh 0;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+h4
+{
+    padding: 3vh 0;
+}
+footer
+{
+    background-color: black;
+
+}
+
+footer p
+{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 5vh 0;
+}
+
+footer a
+{
+    font-size: 16px;
+    color: #703da0e8;
+}
+
