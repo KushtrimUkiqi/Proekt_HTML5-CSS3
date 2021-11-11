@@ -1,6 +1,6 @@
 # Project made with css and html 
 
-## This project is made only for educational educational purposes
+## This project is made and will be used only for educational purposes
 
 <a href="https://www.upshotmedia.in/index.html">Link to the real project to which this project is referenced to click me</a>
 
